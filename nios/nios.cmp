@@ -1,0 +1,12 @@
+	component nios is
+		port (
+			clk_clk       : in    std_logic                    := 'X';             -- clk
+			qspi_dclk     : out   std_logic;                                       -- dclk
+			qspi_ncs      : out   std_logic;                                       -- ncs
+			qspi_data     : inout std_logic_vector(3 downto 0) := (others => 'X'); -- data
+			reset_reset_n : in    std_logic                    := 'X';             -- reset_n
+			uart_rxd      : in    std_logic                    := 'X';             -- rxd
+			uart_txd      : out   std_logic                                        -- txd
+		);
+	end component nios;
+
